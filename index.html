@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>С Днём Рождения, любимая!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="audio/birthday.mp3" type="audio/mpeg" />
+    Ваш браузер не поддерживает аудио.
+  </audio>
+
+  <audio id="audio-card" loop>
+    <source src="audio/card.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="modal" id="greetingModal">
+    <div class="modal-content">
+      <h2>С Днём Рождения, любимая!</h2>
+      <p>Ты — моё вдохновение, моя радость и моё сердце. 💖</p>
+      <button id="closeModal">Спасибо 💕</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Ты — моё всё</h1>
+      <p>Галерея воспоминаний и любви</p>
+      <div class="music-controls">
+        <div class="music-block">
+          <h3>Фоновая музыка</h3>
+          <button id="play-bg">▶</button>
+          <button id="pause-bg">⏸</button>
+        </div>
+        <div class="music-block">
+          <h3>Аудиооткрытка</h3>
+          <button id="play-card">▶</button>
+          <button id="pause-card">⏸</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider" id="slider">
+      <div class="slides">
+        <div class="slide"><img src="img/photo1.jpg" alt="Фото 1"></div>
+        <div class="slide"><img src="img/photo2.jpg" alt="Фото 2"></div>
+        <div class="slide"><img src="img/photo3.jpg" alt="Фото 3"></div>
+      </div>
+      <button class="nav prev">&#10094;</button>
+      <button class="nav next">&#10095;</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>С любовью навсегда ❤️</p>
+  </footer>
+
+  <canvas id="heartsCanvas"></canvas>
+  <canvas id="fireworksCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
